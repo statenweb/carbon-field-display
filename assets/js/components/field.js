@@ -8,9 +8,9 @@ import { compose, withHandlers, setStatic } from 'recompose';
 /**
  * The internal dependencies.
  */
-import Field from 'fields/components/field';
-import withStore from 'fields/decorators/with-store';
-import withSetup from 'fields/decorators/with-setup';
+import Field from '../../../../../htmlburger/carbon-fields/assets/js/fields/components/field';
+import withStore from '../../../../../htmlburger/carbon-fields/assets/js/fields/decorators/with-store';
+import withSetup from '../../../../../htmlburger/carbon-fields/assets/js/fields/decorators/with-setup';
 
 /**
  * Render a display input field.
