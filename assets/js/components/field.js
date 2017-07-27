@@ -13,7 +13,7 @@ import withStore from 'fields/decorators/with-store';
 import withSetup from 'fields/decorators/with-setup';
 
 /**
- * Render a number input field.
+ * Render a display input field.
  *
  * @param  {Object}        props
  * @param  {String}        props.name
@@ -21,23 +21,16 @@ import withSetup from 'fields/decorators/with-setup';
  * @param  {Function}      props.handleChange
  * @return {React.Element}
  */
-export const NumberField = ({
+export const DisplayField = ({
 	name,
 	field,
 	handleChange
 }) => {
 	return <Field field={field}>
-		<input
-			type="number"
-			id={field.id}
-			name={name}
-			value={field.value}
-			disabled={!field.ui.is_visible}
-			className="regular-text"
-			max={field.max}
-			min={field.min}
-			step={field.step}
-			onChange={handleChange} />
+		<p>
+			{field.value}
+		</p>
+		
 	</Field>;
 }
 
@@ -46,14 +39,12 @@ export const NumberField = ({
  *
  * @type {Object}
  */
-NumberField.propTypes = {
+DisplayField.propTypes = {
 	name: PropTypes.string,
 	field: PropTypes.shape({
 		id: PropTypes.string,
 		value: PropTypes.string,
-		min: PropTypes.number,
-		max: PropTypes.number,
-		step: PropTypes.number,
+		
 	}),
 	handleChange: PropTypes.func,
 };
@@ -83,6 +74,6 @@ export const enhance = compose(
 );
 
 export default setStatic('type', [
-	'number',
-])(enhance(NumberField));
+	'display',
+])(enhance(DisplayField));
 

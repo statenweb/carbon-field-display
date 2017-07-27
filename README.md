@@ -1,6 +1,6 @@
-# Carbon Field: Number
+# Carbon Field: Display
 
-Adds a `number` field type to Carbon Fields. Install using composer:
+Adds a `display` field type to Carbon Fields. Install using composer:
 ```cli
-composer require htmlburger/carbon-field-number
+composer require statenweb/carbon-field-display
 ```

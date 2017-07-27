@@ -1,15 +1,15 @@
 <?php
 /**
- * Plugin Name: Carbon Field Number
- * Description: Number Field extension for Carbon Fields.
+ * Plugin Name: Carbon Field Display
+ * Description: Display Field extension for Carbon Fields.
  * Version: 2.0.0
  * Author: htmlburger
- * Author URI: https://htmlburger.com/
- * Plugin URI: http://carbonfields.net/
+ * Author URI: https://statenweb.com/
+ * Plugin URI: http://statenweb.com/
  * License: GPL2
  * Requires at least: 4.0
  * Tested up to: 4.8
- * Text Domain: carbon-field-number
+ * Text Domain: carbon-field-display
  * Domain Path: /languages
  */
 

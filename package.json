@@ -1,5 +1,5 @@
 {
-  "name": "carbon-field-number",
+  "name": "carbon-field-display",
   "version": "1.0.0",
   "scripts": {
     "dev": "webpack -w",

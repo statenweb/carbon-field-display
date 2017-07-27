@@ -1,9 +1,9 @@
 <?php
 use Carbon_Fields\Carbon_Fields;
-use Carbon_Field_Number\Number_Field;
+use Carbon_Field_Display\Display_Field;
 
-define( 'Carbon_Field_Number\\DIR', __DIR__ );
+define( 'Carbon_Field_Display\\DIR', __DIR__ );
 
-Carbon_Fields::extend( Number_Field::class, function( $container ) {
-	return new Number_Field( $container['arguments']['type'], $container['arguments']['name'], $container['arguments']['label'] );
+Carbon_Fields::extend( Display_Field::class, function( $container ) {
+	return new Display_Field( $container['arguments']['type'], $container['arguments']['name'], $container['arguments']['label'] );
 } );
