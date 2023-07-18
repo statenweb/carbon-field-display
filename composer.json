@@ -1,39 +1,49 @@
 {
-    "name": "statenweb/carbon-field-display",
-    "description": "Carbon Fields extension, that adds a display field type.",
-    "keywords": ["wordpress", "carbon-field", "carbon-field-display"],
-    "homepage": "https://github.com/statenweb/carbon-field-display/",
-    "type": "library",
-    "license": "GPL-2.0+",
-    "authors": [
-        {
-            "name": "Mat Gargano",
-            "email": "mat@statenweb.com"
-        },
-        {
-            "name": "Plamen Kostadinov",
-            "email": "pkostadinov.2create@gmail.com"
-        },
-        {
-            "name": "Atanas Angelov",
-            "email": "atanas.angelov.dev@gmail.com",
-            "role": "Developer"
-        },
-        {
-            "name": "Viktor Vasilev",
-            "email": "liberalcho@gmail.com",
-            "role": "Developer"
-        }
-    ],
-    "require": {
-        "htmlburger/carbon-fields": "^2.0"
+  "name": "statenweb/carbon-field-display",
+  "description": "Carbon Fields extension, that adds a display field type.",
+  "keywords": [
+    "wordpress",
+    "carbon-field",
+    "carbon-field-display"
+  ],
+  "homepage": "https://github.com/statenweb/carbon-field-display/",
+  "type": "library",
+  "license": "GPL-2.0+",
+  "authors": [
+    {
+      "name": "Mat Gargano",
+      "email": "mat@statenweb.com"
     },
-    "autoload": {
-        "files": [
-            "field.php"
-        ],
-        "psr-4": {
-            "Carbon_Field_Display\\": "core/"
-        }
+    {
+      "name": "Plamen Kostadinov",
+      "email": "pkostadinov.2create@gmail.com"
+    },
+    {
+      "name": "Atanas Angelov",
+      "email": "atanas.angelov.dev@gmail.com",
+      "role": "Developer"
+    },
+    {
+      "name": "Viktor Vasilev",
+      "email": "liberalcho@gmail.com",
+      "role": "Developer"
     }
+  ],
+  "require": {
+    "htmlburger/carbon-fields": "^2.0",
+    "composer/installers": "^2"
+  },
+  "autoload": {
+    "files": [
+      "field.php"
+    ],
+    "psr-4": {
+      "Carbon_Field_Display\\": "core/"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "composer/installers": true
+    }
+  }
 }
